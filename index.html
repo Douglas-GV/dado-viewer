@@ -44,7 +44,7 @@
   <div id="empty" style="display:none">No hay salas activas en este momento</div>
 
   <script>
-    const WS_URL = 'wss://decade-quarter-aquatic-genetic.trycloudflare.com';
+    const socket = new WebSocket("wss://dados-viewer.duckdns.org");
 
     let ws = null;
     let reconnectTimer = null;
